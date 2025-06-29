@@ -32,7 +32,7 @@ jobs:
 
     - name: Report with CML
       env:
-        REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
       run: |
         echo "$REPO_TOKEN"
         echo "## Test Report from CI" > report.md
