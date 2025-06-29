@@ -18,7 +18,7 @@ jobs:
 
     - name: Set up DVC & Pull Data
       run: |
-        pip install dvc
+        pip install dvc[gs]
         dvc pull
     
     - name: Run Tests
