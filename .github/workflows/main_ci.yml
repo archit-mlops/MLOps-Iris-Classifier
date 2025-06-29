@@ -18,8 +18,7 @@ jobs:
     
     - name: Run Tests
       run: |
-        pytest tests/ > result.txt
-        cat result.txt
+        pytest tests/
 
     - name: Report with CML
       env:
