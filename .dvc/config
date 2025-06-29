@@ -1,0 +1,4 @@
+[core]
+    remote = storage
+['remote "storage"']
+    url = gs://starry-being-461309-p7-iris-dvc-remote
