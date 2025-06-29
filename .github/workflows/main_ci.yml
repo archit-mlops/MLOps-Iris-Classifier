@@ -17,8 +17,11 @@ jobs:
         pip install -r requirements.txt
 
     - name: Set up DVC & Pull Data
+      env:
+        GOOGLE_APPLICATION_CREDENTIALS: gcp-creds.json
       run: |
         pip install dvc[gs]
+        echo "${{ secrets.GCP_CREDS }}" > gcp-creds.json
         dvc pull
     
     - name: Run Tests
