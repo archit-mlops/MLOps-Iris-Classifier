@@ -18,6 +18,7 @@ jobs:
     
     - name: Run Tests
       run: |
+        python -m train
         pytest tests/
 
     - name: Report with CML
