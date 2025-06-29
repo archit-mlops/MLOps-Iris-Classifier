@@ -18,7 +18,7 @@ jobs:
     
     - name: Run Tests
       run: |
-        pytest tests/ --maxfail=1 --disable-warnings --tb=short > result.txt
+        pytest tests/ > result.txt
         cat result.txt
 
     - name: Report with CML
