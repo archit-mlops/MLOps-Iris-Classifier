@@ -21,6 +21,7 @@ jobs:
         GOOGLE_APPLICATION_CREDENTIALS: gcp-creds.json
       run: |
         pip install dvc[gs]
+        echo "${{ secrets.GCP_CREDS }}"
         echo "${{ secrets.GCP_CREDS }}" > gcp-creds.json
         dvc pull
     
