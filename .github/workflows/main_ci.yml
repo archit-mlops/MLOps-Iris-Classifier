@@ -28,7 +28,7 @@ jobs:
     - name: Run Tests
       run: |
         python -m train
-        pytest tests/
+        pytest tests/ > result.txt
 
     - name: Report with CML
       env:
