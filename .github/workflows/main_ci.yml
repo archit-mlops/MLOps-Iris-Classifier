@@ -15,6 +15,11 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+
+    - name: Set up DVC & Pull Data
+      run: |
+        pip install dvc
+        dvc pull
     
     - name: Run Tests
       run: |
